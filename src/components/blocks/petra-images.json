@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_petra_images",
+  "info": {
+    "displayName": "petraImages",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "homeText": {
+      "type": "text"
+    },
+    "imagePairs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.image-pair"
+    }
+  }
+}

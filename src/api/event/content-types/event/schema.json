@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "eventImage": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "EventTitle": {
+      "type": "string"
+    },
+    "EventDescription": {
+      "type": "text"
+    },
+    "EventDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "events.event-details"
+    }
+  }
+}

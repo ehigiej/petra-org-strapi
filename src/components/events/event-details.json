@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_events_event_details",
+  "info": {
+    "displayName": "Event Details",
+    "icon": "plane"
+  },
+  "options": {},
+  "attributes": {
+    "titleText": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.text-dropdown"
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

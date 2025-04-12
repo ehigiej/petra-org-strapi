@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_text_dropdowns",
+  "info": {
+    "displayName": "textDropdown",
+    "icon": "arrowDown"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

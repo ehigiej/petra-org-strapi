@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_buttons_button_link_rows",
+  "info": {
+    "displayName": "Button Link Row",
+    "icon": "cloud"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "buttons.button-link"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_footer_page_footers",
+  "info": {
+    "displayName": "footer",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "footer": {
+      "type": "string"
+    }
+  }
+}

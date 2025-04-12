@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_campuses_campuses",
+  "info": {
+    "displayName": "Campuses",
+    "icon": "pinMap"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.button-link"
+    }
+  }
+}

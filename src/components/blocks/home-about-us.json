@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blocks_home_about_uses",
+  "info": {
+    "displayName": "home-about-us",
+    "icon": "folder",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "quote": {
+      "type": "blocks"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.button-link"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

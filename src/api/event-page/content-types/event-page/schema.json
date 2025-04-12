@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_pages",
+  "info": {
+    "singularName": "event-page",
+    "pluralName": "event-pages",
+    "displayName": "EventPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
+    },
+    "footer_page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::footer-page.footer-page",
+      "inversedBy": "event_page"
+    }
+  }
+}

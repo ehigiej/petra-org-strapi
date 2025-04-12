@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_music_rows",
+  "info": {
+    "displayName": "music-row",
+    "icon": "rotate"
+  },
+  "options": {},
+  "attributes": {
+    "rowmusic": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.music"
+    }
+  }
+}

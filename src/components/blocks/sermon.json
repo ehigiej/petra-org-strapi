@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_blocks_sermons",
+  "info": {
+    "displayName": "Sermon",
+    "icon": "gate"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "smallText": {
+      "type": "blocks"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "MusicRow": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.music-row"
+    }
+  }
+}

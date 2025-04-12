@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blocks_image_pairs",
+  "info": {
+    "displayName": "imagePair",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "aboutImage": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "imageDescription": {
+      "type": "text"
+    }
+  }
+}

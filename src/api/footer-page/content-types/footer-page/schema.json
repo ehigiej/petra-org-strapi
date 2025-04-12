@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footer_pages",
+  "info": {
+    "singularName": "footer-page",
+    "pluralName": "footer-pages",
+    "displayName": "FooterPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Footer": {
+      "type": "string"
+    },
+    "Footer1": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "Petra": {
+      "type": "text"
+    },
+    "buttonLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "buttons.button-link-row"
+    },
+    "petra_home_page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::petra-home-page.petra-home-page",
+      "inversedBy": "footer_page"
+    },
+    "event_page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event-page.event-page",
+      "mappedBy": "footer_page"
+    }
+  }
+}

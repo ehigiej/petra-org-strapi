@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "petra_home_pages",
+  "info": {
+    "singularName": "petra-home-page",
+    "pluralName": "petra-home-pages",
+    "displayName": "Petra Home Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "metaData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.button-link"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.home-about-us",
+        "blocks.sermon",
+        "blocks.campus-home-page",
+        "blocks.petra-images",
+        "blocks.get-involved"
+      ]
+    },
+    "footer_page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::footer-page.footer-page",
+      "inversedBy": "petra_home_page"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_campus_home_pages",
+  "info": {
+    "displayName": "Campus-home-page",
+    "icon": "paperPlane"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location"
+    }
+  }
+}

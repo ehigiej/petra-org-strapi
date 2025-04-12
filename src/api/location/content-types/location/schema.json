@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "campus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "campuses.campuses"
+    }
+  }
+}

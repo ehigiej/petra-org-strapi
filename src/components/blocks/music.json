@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_blocks_music",
+  "info": {
+    "displayName": "Music",
+    "icon": "volumeUp"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.button-link"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Title": {
+      "type": "string"
+    },
+    "smalltext": {
+      "type": "blocks"
+    }
+  }
+}

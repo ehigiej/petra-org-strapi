@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_get_involveds",
+  "info": {
+    "displayName": "getInvolved",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "textDropdown": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.text-dropdown"
+    }
+  }
+}
