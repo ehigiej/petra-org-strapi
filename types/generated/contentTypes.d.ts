@@ -386,8 +386,8 @@ export interface ApiEventPageEventPage extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     Description: Schema.Attribute.Text;
     events: Schema.Attribute.Relation<'oneToMany', 'api::event.event'>;
-    footer_page: Schema.Attribute.Relation<
-      'oneToOne',
+    footer_pages: Schema.Attribute.Relation<
+      'oneToMany',
       'api::footer-page.footer-page'
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -449,10 +449,6 @@ export interface ApiFooterPageFooterPage extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    event_page: Schema.Attribute.Relation<
-      'oneToOne',
-      'api::event-page.event-page'
-    >;
     Footer: Schema.Attribute.String;
     Footer1: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -463,10 +459,6 @@ export interface ApiFooterPageFooterPage extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     mail: Schema.Attribute.String;
     Petra: Schema.Attribute.Text;
-    petra_home_page: Schema.Attribute.Relation<
-      'oneToOne',
-      'api::petra-home-page.petra-home-page'
-    >;
     phone: Schema.Attribute.BigInteger;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
@@ -563,8 +555,8 @@ export interface ApiPetraHomePagePetraHomePage
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Description: Schema.Attribute.Text;
-    footer_page: Schema.Attribute.Relation<
-      'oneToOne',
+    footer_pages: Schema.Attribute.Relation<
+      'oneToMany',
       'api::footer-page.footer-page'
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;

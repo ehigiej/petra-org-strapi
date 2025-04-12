@@ -22,11 +22,10 @@
       "relation": "oneToMany",
       "target": "api::event.event"
     },
-    "footer_page": {
+    "footer_pages": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::footer-page.footer-page",
-      "inversedBy": "event_page"
+      "relation": "oneToMany",
+      "target": "api::footer-page.footer-page"
     }
   }
 }

@@ -41,11 +41,10 @@
         "blocks.get-involved"
       ]
     },
-    "footer_page": {
+    "footer_pages": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::footer-page.footer-page",
-      "inversedBy": "petra_home_page"
+      "relation": "oneToMany",
+      "target": "api::footer-page.footer-page"
     }
   }
 }
