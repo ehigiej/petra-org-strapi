@@ -5,4 +5,7 @@ EVENTS COLLECTION.
 EVENTS PAGE that FETCHES ALL EVENTS
 PETRA LOCATION AND DETAILS. 
 
-Run NPM RUN STRAPI to see STRAPI CLOUD. 
+Start With
+npm install - to install dep
+npm run strapi import -- --file backup.tar.gz - to install Media from Backup
+npm run dev
