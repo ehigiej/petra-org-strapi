@@ -1,0 +1,2 @@
+# petra-org-strapi
+CREATED A CLONE FOR PETRA ORG USING STRAPI
